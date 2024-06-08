@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     daisyui: {
       themes: ["light", "dark", "cupcake"],
+      fontFamily: {
+        'body' : ["Ubuntu", "sans-serif"],
+        'h2' : ["Titillium Web", "sans-serif"],
+
+      }
     },
     extend: {
       colors: {
