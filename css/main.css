@@ -2337,6 +2337,16 @@ html {
   margin-bottom: 1rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2437,6 +2447,34 @@ html {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-2\.5 {
+  width: 0.625rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[26rem\] {
+  width: 26rem;
+}
+
+.w-\[22rem\] {
+  width: 22rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
 .grow {
   flex-grow: 1;
 }
@@ -2460,6 +2498,10 @@ html {
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -2516,10 +2558,6 @@ html {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .p-5 {
@@ -2689,10 +2727,6 @@ html {
 
   .lg\:justify-center {
     justify-content: center;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
   }
 
   .lg\:gap-10 {
