@@ -20,7 +20,6 @@
       <!-- ! **1st** Navbar section is start here! -->
       <div
         class="flex justify-center mb-4"
-      
         class="flex justify-center my-4 mx-4 uppercase font-bold text-black"
       >
         <!-- TODO: Home -->
@@ -29,31 +28,19 @@
             <div class="navbar-center lg:flex justify-between">
               <div class="dropdown">
                 <div tabindex="0" role="button" id="threeDots" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
-                  stroke="currentColor"  class="h-5 w-5 hidden" id="crossDot"
-                  >
-                    <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
-                  </svg>
+                  <div id="navClick">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
+                    </svg>
+                  </div>
+                  <div class="hidden" id="navClose">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" stroke="currentColor" class="h-5 w-5" id="crossDot">
+                      <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+                    </svg>
+                  </div>
                 </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Home</a></li>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a href="abck">Home</a></li>
                   <li>
                     <details>
                       <summary class="w-24">Pages</summary>
@@ -100,6 +87,8 @@
                   <li><a href="https://www.blogs.com">Contact us</a></li>
                 </ul>
               </div>
+            </div>
+            
               <img
                 class="items-center w[23px]"
                 src="https://organica-1.myshopify.com/cdn/shop/files/logo_1_203x59@2x.png?v=1613157075"
@@ -108,7 +97,7 @@
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
+                <li><a href="https://www.facebook.com">Home</a></li>
                 <li>
                   <details>
                     <summary class="w-24">Pages</summary>
@@ -595,11 +584,14 @@
 
       <div class="grid mx-1 lg:flex lg:justify-center">
         <!-- First Section -->
-        <section class="my-3  flex lg:justify-center lg:mx-5">
+        <section class="my-3 flex lg:justify-center lg:mx-5">
           <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
-              <img class="h-[250px] lg:h-full"
-              src="https://organica-1.myshopify.com/cdn/shop/articles/blog-8-750x450_375x225.jpg" alt="Shoes" />
+              <img
+                class="h-[250px] lg:h-full"
+                src="https://organica-1.myshopify.com/cdn/shop/articles/blog-8-750x450_375x225.jpg"
+                alt="Shoes"
+              />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Benefits Of Natural Fruits</h2>
@@ -609,23 +601,30 @@
               <div class="flex items-center">
                 <div class="avatar">
                   <div class="w-20 rounded-full">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
                   </div>
                 </div>
                 <div class="badge badge-primary badge-outline mx-3">Admin</div>
               </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-outline text-color-primary">Read More</button>
+                <button class="btn btn-outline text-color-primary">
+                  Read More
+                </button>
               </div>
             </div>
           </div>
         </section>
-      
+
         <!-- Second Section -->
         <section class="my-3 flex lg:justify-center lg:mx-5">
           <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src="https://organica-1.myshopify.com/cdn/shop/articles/blog-2-750x450.jpg?" alt="Shoes" />
+              <img
+                src="https://organica-1.myshopify.com/cdn/shop/articles/blog-2-750x450.jpg?"
+                alt="Shoes"
+              />
             </figure>
             <div class="card-body">
               <h2 class="card-title">From Now We Are Certified ...</h2>
@@ -635,23 +634,30 @@
               <div class="flex items-center">
                 <div class="avatar">
                   <div class="w-20 rounded-full">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
                   </div>
                 </div>
                 <div class="badge badge-primary badge-outline mx-3">Admin</div>
               </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-outline text-color-primary">Read More</button>
+                <button class="btn btn-outline text-color-primary">
+                  Read More
+                </button>
               </div>
             </div>
           </div>
         </section>
-      
+
         <!-- Third Section -->
         <section class="my-3 flex lg:justify-center lg:mx-5">
           <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
-              <img src="https://organica-1.myshopify.com/cdn/shop/articles/blog-6-750x450.jpg" alt="Shoes" />
+              <img
+                src="https://organica-1.myshopify.com/cdn/shop/articles/blog-6-750x450.jpg"
+                alt="Shoes"
+              />
             </figure>
             <div class="card-body">
               <h2 class="card-title">Consectetuer Adipiscing Elit</h2>
@@ -661,20 +667,22 @@
               <div class="flex items-center">
                 <div class="avatar">
                   <div class="w-20 rounded-full">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                    />
                   </div>
                 </div>
                 <div class="badge badge-primary badge-outline mx-3">Admin</div>
               </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-outline text-color-primary">Read More</button>
+                <button class="btn btn-outline text-color-primary">
+                  Read More
+                </button>
               </div>
             </div>
           </div>
-        </section> 
+        </section>
       </div>
-      
-      
     </main>
 
     <!-- Footer Section -->
@@ -721,6 +729,6 @@
     </footer>
 
     <!-- ! Javascript setup -->
-     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
