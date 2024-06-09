@@ -28,7 +28,7 @@
           <div class="navbar navbar-center lg:justify-center">
             <div class="navbar-center lg:flex justify-between">
               <div class="dropdown">
-                <div tabindex="0" role="button" class=" btn btn-ghost lg:hidden">
+                <div tabindex="0" role="button" id="threeDots" class="btn btn-ghost lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -42,6 +42,11 @@
                       stroke-width="2"
                       d="M4 6h16M4 12h8m-8 6h16"
                     />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                  stroke="currentColor"  class="h-5 w-5 hidden" id="crossDot"
+                  >
+                    <path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
                   </svg>
                 </div>
                 <ul
@@ -183,7 +188,7 @@
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
               fill="currentColor"
-              class="w-10 h-4 opacity-70"
+              class="w-full lg:w-10 h-4 opacity-70"
             >
               <path
                 fill-rule="evenodd"
@@ -588,12 +593,12 @@
         Blog Post
       </h2>
 
-      <div class="grid w-44 mx-1 lg:flex justify-center">
+      <div class="grid mx-1 lg:flex lg:justify-center">
         <!-- First Section -->
-        <section class="my-3 flex lg:justify-center lg:mx-5">
-          <div class="card w-30 lg:w-96 bg-base-100 shadow-xl">
+        <section class="my-3  flex lg:justify-center lg:mx-5">
+          <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
+              <img class="h-[250px] lg:h-full"
               src="https://organica-1.myshopify.com/cdn/shop/articles/blog-8-750x450_375x225.jpg" alt="Shoes" />
             </figure>
             <div class="card-body">
@@ -618,7 +623,7 @@
       
         <!-- Second Section -->
         <section class="my-3 flex lg:justify-center lg:mx-5">
-          <div class="card w-30 lg:w-96 bg-base-100 shadow-xl">
+          <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
               <img src="https://organica-1.myshopify.com/cdn/shop/articles/blog-2-750x450.jpg?" alt="Shoes" />
             </figure>
@@ -644,7 +649,7 @@
       
         <!-- Third Section -->
         <section class="my-3 flex lg:justify-center lg:mx-5">
-          <div class="card w-30 lg:w-96 bg-base-100 shadow-xl">
+          <div class="card w-[300px] lg:w-96 bg-base-100 shadow-xl">
             <figure>
               <img src="https://organica-1.myshopify.com/cdn/shop/articles/blog-6-750x450.jpg" alt="Shoes" />
             </figure>
@@ -666,7 +671,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> 
       </div>
       
       
@@ -714,5 +719,8 @@
         <a class="link link-hover">Cookie policy</a>
       </nav>
     </footer>
+
+    <!-- ! Javascript setup -->
+     <script src="js/main.js"></script>
   </body>
 </html>
